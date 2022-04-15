@@ -52,7 +52,7 @@ function saveCity() {
             
             const iconTemp = document.createElement('img');
                 iconTemp.className = 'h-5 mr-2';
-                iconTemp.src = `../img/temperature-half-solid.svg`;
+                iconTemp.src = `./img/temperature-half-solid.svg`;
                 iconTemp.alt = 'temperature-half-solid';
             
             const temp = document.createElement('h2');
@@ -68,7 +68,7 @@ function saveCity() {
 
             const iconWind = document.createElement('img');
                 iconWind.className = 'h-5 mr-2';
-                iconWind.src = `../img/wind-solid.svg`;
+                iconWind.src = `./img/wind-solid.svg`;
                 iconWind.alt = 'wind-solid';
             
             const wind = document.createElement('h2');
