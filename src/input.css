@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_button {
+    @apply w-8 h-8  border-solid border-blue-900 border-2 rounded-full cursor-pointer
+}
+
+.nav_icon_button {
+    @apply h-6 w-6 text-blue-900 mx-auto
+}

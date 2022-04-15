@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="shortcut icon" href="./img/icons8-weather-16.png" type="image/x-icon">
+    <title>Weather App | Luis Yps Fdez</title>
+</head>
+<body class="w-full max-w-md min-h-screen h-auto font-Montserrat bg-blue-900 mx-auto pb-3">
+    <nav class="w-full h-16 bg-white flex justify-around items-center">
+        <button class="nav_button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="nav_icon_button" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        <div class="w-auto h-10 flex justify-center items-center">
+            <input class="w-40 outline-none py-1 px-4 placeholder:text-sm placeholder:text-center placeholder:text-blue-300 transition-all duration-300 focus-within:shadow-sm focus:w-52 border-solid border-blue-900 border-2 rounded-l-full" type="text" name="" id="search" placeholder="Type your city" autocomplete="off" autocapitalize="words">
+            <button id="search_button" class="w-10 h-9 bg-blue-900 border-solid border-blue-900 border-2 rounded-r-full flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+        </div>
+        <button class="nav_button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="nav_icon_button" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+        </button>
+    </nav>
+    <main>
+        <div class="w-3/4 h-auto mx-auto text-center">
+            <h1 class="text-2xl font-bold pt-2 text-white">ClimApp</h1>
+            <p class="font-medium text-white">¡Find the weather of your city now!</p>
+        </div>
+        <div id="app">
+            <!-- <div class="w-3/4 h-auto mx-auto mt-3 bg-blue-300 rounded-2xl text-center text-blue-900">
+                <h2 class="text-xl  font-semibold pt-3">
+                    Barranquilla, CO
+                </h2>
+                <p class="text-sm font-semibold">Algo de nubes</p>
+                <img class="mx-auto" src="https://openweathermap.org/img/wn/02n@2x.png" alt="icon-weather">
+                <div class="flex justify-evenly items-center pb-3">
+                    <div class="flex justify-center items-center">
+                        <img class="h-5 mr-2" src="../img/temperature-half-solid.svg" alt="temperature-half-solid">
+                        <h2 class="text-2xl font-semibold">30.12</h2>
+                        <P class="text-lg">°C</P>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img class="h-5 mr-2" src="../img/wind-solid.svg" alt="wind-solid">
+                        <h2 class="text-2xl font-semibold">4.12</h2>
+                        <P class="text-base">km/h</P>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
