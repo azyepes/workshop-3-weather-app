@@ -16,8 +16,17 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const app = document.querySelector('#app');
 const search_button = document.getElementById('search_button');
 search_button.addEventListener("click", saveCity);
+document.addEventListener("keypress", enterKey);
 
-function saveCity() {
+function enterKey(event) {
+    // console.log(event);
+    if (event.keyCode === 13) {
+        saveCity()
+    }
+}
+
+function saveCity(event) {
+    console.log(event);
     const search = document.getElementById('search').value;
 
     window
